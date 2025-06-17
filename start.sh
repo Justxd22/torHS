@@ -4,11 +4,16 @@ set -e
 echo "Starting Flask app..."
 python3 main.py &
 
+
+chmod 700 /var/lib/tor/hidden_service
+chown -R root:root /var/lib/tor/hidden_service
+
+
 echo "Starting Tor..."
-sudo tor &
+tor &
 
 # Wait a few seconds for Tor to bootstrap
-sleep 5
+sleep 10
 
 if [ -f /var/lib/tor/hidden_service/hostname ]; then
     echo "Onion address: http://$(cat /var/lib/tor/hidden_service/hostname)"

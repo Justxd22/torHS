@@ -1,5 +1,3 @@
-User tor
-
 DataDirectory /var/lib/tor
 
 # optional local tor access
