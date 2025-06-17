@@ -16,7 +16,8 @@ tor &
 sleep 10
 
 if [ -f /var/lib/tor/hidden_service/hostname ]; then
-    echo "Onion address: http://$(cat /var/lib/tor/hidden_service/hostname)"
+    echo -e "\n\n\n\n##############\n\nOnion address: http://$(cat /var/lib/tor/hidden_service/hostname)\n\n##############\n\n"
+
 else
     echo "Onion address not found (Tor may not have generated it yet)."
 fi
