@@ -1,0 +1,13 @@
+User tor
+
+DataDirectory /var/lib/tor
+
+# optional local tor access
+# SocksPort 127.0.0.1:9050
+
+# Log notice stdout
+# Log info stdout
+
+HiddenServiceDir /var/lib/tor/hidden_service/
+HiddenServicePort 80 127.0.0.1:8080
+HiddenServiceExportCircuitID haproxy

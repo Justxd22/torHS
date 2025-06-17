@@ -1,0 +1,2 @@
+volumes:
+  - ./tor/hidden_service:/var/lib/tor/hidden_service
