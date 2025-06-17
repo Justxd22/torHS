@@ -50,3 +50,7 @@ The Extraction is done using the haproxy headers sent in the function `def extra
     ```
 
 ### Both tor and haproxy configs are attached as well as a docker for easy run
+
+## Demo
+![demo](.res/s1.png)
+![demo](.res/s2.png)
